@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c2b80817740d291d16b5cefa03594cd",
+    "content-hash": "f016aafda00dc784e0bc77a108098b39",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6894,16 +6894,16 @@
         },
         {
             "name": "wikimedia/composer-merge-plugin",
-            "version": "v1.4.1",
+            "version": "dev-composer20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wikimedia/composer-merge-plugin.git",
-                "reference": "81c6ac72a24a67383419c7eb9aa2b3437f2ab100"
+                "reference": "7274d0238193f52c429015865fe83cde71f56347"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/81c6ac72a24a67383419c7eb9aa2b3437f2ab100",
-                "reference": "81c6ac72a24a67383419c7eb9aa2b3437f2ab100",
+                "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/7274d0238193f52c429015865fe83cde71f56347",
+                "reference": "7274d0238193f52c429015865fe83cde71f56347",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6913,19 +6913,19 @@
                 ]
             },
             "require": {
-                "composer-plugin-api": "^1.0",
-                "php": ">=5.3.2"
+                "composer-plugin-api": "^1.1||^2.0",
+                "php": ">=7.2.0"
             },
             "require-dev": {
-                "composer/composer": "~1.0.0",
-                "jakub-onderka/php-parallel-lint": "~0.8",
-                "phpunit/phpunit": "~4.8|~5.0",
-                "squizlabs/php_codesniffer": "~2.1.0"
+                "composer/composer": "^1.1",
+                "php-parallel-lint/php-parallel-lint": "~1.1.0",
+                "phpunit/phpunit": "^8.5||^9.0",
+                "squizlabs/php_codesniffer": "~3.5.4"
             },
             "type": "composer-plugin",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3.x-dev"
+                    "dev-master": "1.5.x-dev"
                 },
                 "class": "Wikimedia\\Composer\\MergePlugin"
             },
@@ -6945,7 +6945,11 @@
                 }
             ],
             "description": "Composer plugin to merge multiple composer.json files",
-            "time": "2017-04-25T02:31:25+00:00"
+            "support": {
+                "issues": "https://github.com/wikimedia/composer-merge-plugin/issues",
+                "source": "https://github.com/wikimedia/composer-merge-plugin/tree/composer20"
+            },
+            "time": "2020-03-31T23:11:10+00:00"
         },
         {
             "name": "zedisdog/laravel-schema-extend",
@@ -10013,7 +10017,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "wikimedia/composer-merge-plugin": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
@@ -10024,5 +10030,5 @@
         "ext-pcntl": "7.3",
         "ext-posix": "7.3"
     },
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
